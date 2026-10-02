@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="top">
+    <header>
+        <h1>Kantin Sekolah</h1>
+        <p>Selamat datang di Website Kantin Sekolah! Disini kamu bisa memesan makanan dan minuman yang tersedia. selamat berbelanja!</p>
+     </header>
+    <div class="navigation">
+        <ul>
+            <li><a href="#top"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#menu"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            <li><a href="#" data-alert="Fitur About akan segera hadir."><i class="fa-solid fa-info"></i> About</a></li>
+            <li><a href="#" data-alert="Fitur login akan segera hadir."><i class="fa-solid fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+
+    <!-- daftar menu -->
+
+    <section class="menu" id="menu">
+        <div class="menu-item">
+            <h3>Nasi Goreng</h3>
+            
+            <p>Rp 15.000</p>
+            <div class="item">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Kurangi Nasi Goreng">−</button>
+                <input class="quantity" type="number" value="0" min="0" max="99" aria-label="Jumlah Nasi Goreng">
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Tambah Nasi Goreng">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3>Mie Goreng</h3>
+            <p>Rp 12.000</p>
+            <div class="item">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Kurangi Mie Goreng">−</button>
+                <input class="quantity" type="number" value="0" min="0" max="99" aria-label="Jumlah Mie Goreng">
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Tambah Mie Goreng">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3>Nasi Ayam</h3>
+            <p>Rp 20.000</p>
+            <div class="item">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Kurangi Nasi Ayam">−</button>
+                <input class="quantity" type="number" value="0" min="0" max="99" aria-label="Jumlah Nasi Ayam">
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Tambah Nasi Ayam">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3>Es Teh</h3>
+            <p>Rp 5.000</p>
+            <div class="item">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Kurangi Es Teh">−</button>
+                <input class="quantity" type="number" value="0" min="0" max="99" aria-label="Jumlah Es Teh">
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Tambah Es Teh">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3>Es Jeruk</h3>
+            <p>Rp 6.000</p>
+            <div class="item">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Kurangi Es Jeruk">−</button>
+                <input class="quantity" type="number" value="0" min="0" max="99" aria-label="Jumlah Es Jeruk">
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Tambah Es Jeruk">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3>Milk Shake</h3>
+            <p>Rp 10.000</p>
+            <div class="item">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Kurangi Milk Shake">−</button>
+                <input class="quantity" type="number" value="0" min="0" max="99" aria-label="Jumlah Milk Shake">
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Tambah Milk Shake">+</button>
+            </div>
+        </div>
+    </section>
+
+    <p>Total pesanan: <output id="total-price">Rp 0</output></p>
+    <button id="checkout-btn">pesan sekarang</button>
+    
+
+
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
